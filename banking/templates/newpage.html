@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Loged in {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">“Good banking is produced not by good laws, but by good bankers.”</h1>
+            <p class="lead mb-0">"Federal Bank, your perfect banking partner now enables you to register for Internet Banking facility online. No need of downloading application forms, submitting hard copies and waiting for Pin mailers.
+                Instead you can go ahead registering for FedNet, Internet Banking facility right away."</p>
+            <p class="lead mb-0">
+            <span style="color: black;">Register for Mobile app click the below button.</span>
+                <br>
+              <a href="{% url 'form' %}"><button type="button" class="btn btn-secondary btn-lg">>>click here<<</button></a>
+                <br>
+                <hr>
+                <br>
+        </header>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Federal Bank {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="pt-5 text-white">
+        <header class="py-5 mt-5">
+            <h1 class="display-4">“Your Perfect Banking Partner.”</h1>
+            <p class="lead mb-0">"Federal Bank, your perfect banking partner now enables you to register for Internet Banking facility online. No need of downloading application forms, submitting hard copies and waiting for Pin mailers. Instead you can go ahead registering for FedNet, Internet Banking facility right away."</p>
+            <p class="lead mb-0">
+                for more details click below button
+                <br>
+               <a href="{% url 'login' %}"><button type="button" class="btn btn-primary btn-lg">>>click<<</button></a>
+                <br>
+                <br>
+            </p>
+            <img src="{% static '/img/cover.png'%}" class="d-block w-100" alt="...">
+            <br>
+
+        </header>
+    </div>
+</div>
+    {% block script %}{% endblock %}
+    {% endblock %}
